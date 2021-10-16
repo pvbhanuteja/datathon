@@ -19,7 +19,7 @@ def parse_record(record, training):
     # Convert from [depth, height, width] to [height, width, depth]
     image = np.transpose(depth_major, [1, 2, 0])
 
-    image = preprocess_image(image, training)
+    # image = preprocess_image(image, training)
 
     # Convert from [height, width, depth] to [depth, height, width]
     image = np.transpose(image, [2, 0, 1])
