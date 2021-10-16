@@ -28,8 +28,8 @@ def main(config):
     ### YOUR CODE HERE
     # data_dir = "D:\SEM1\BACK\ResNet\cifar-10-python\cifar-10-batches-py"
     ### YOUR CODE HERE
-    data = np.load('all.npy')
-    y = np.load('mat.npy')
+    data = np.load('/scratch/user/bhanu/datathon/all.npy')
+    y = np.load('/scratch/user/bhanu/datathon/mat.npy')
     x_train_new, y_train_new, x_valid, y_valid = data[0:1900],y[0:1900],data[1900:2000],y[1900:2000]
     model = Cifar(config).cuda()
 
